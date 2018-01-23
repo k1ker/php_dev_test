@@ -4,7 +4,7 @@
 		$left = 0;
 		$right = filesize($fname);
 		
-		while( $left < $right ) {
+		while(true) {
 			$mid = $left + ceil(($right-$left)/2);
 			while ($mid) {
 				fseek($fp, $mid);
